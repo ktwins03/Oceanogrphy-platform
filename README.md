@@ -16,7 +16,8 @@
 7. ESA Ocean virtual laboratory   https://ovl.oceandatalab.com/
 8. NASA World view  https://worldview.earthdata.nasa.gov/
 9. HYCOM 모델 https://www.hycom.org/
-
+10. NASA PODAAC https://podaac.jpl.nasa.gov/
+11. NOAA CoastWatch https://coastwatch.pfeg.noaa.gov/erddap/griddap/index.html?page=1&itemsPerPage=1000
 #
 지구관측 위성영상 활용예시 동영상>
 1. NASA World view 활용예시(리비아 극한강수(2023.9.11) 1차 분석)  https://www.youtube.com/watch?v=c-no5rRqQIg
