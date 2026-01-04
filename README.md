@@ -11,11 +11,8 @@
 2. Copernicus My ocean viewer  https://marine.copernicus.eu/access-data/myocean-viewer 
 3. WebODV  https://webodv.awi.de/
 4. NOAA bathymatriy browser https://www.ncei.noaa.gov/maps/bathymetry/
-5. NASA World view  https://worldview.earthdata.nasa.gov/
-6. HYCOM 모델 https://www.hycom.org/
-7. NASA PODAAC https://podaac.jpl.nasa.gov/
-8. 기후변화 예측 시나리오(Climocast) https://a-plat.nies.go.jp/ap-plat/cmip6/global.html
-9. 미해양대기국 해수면 변화 모니터링(Mean Sea Level Trends for Global Network Stations) https://tidesandcurrents.noaa.gov/sltrends/sltrends_global.shtml
-10. 미해양대기국 해양관측 부이센터(National Data Buoy Center) https://www.ndbc.noaa.gov/
+5. 기후변화 예측 시나리오(Climocast) https://a-plat.nies.go.jp/ap-plat/cmip6/global.html
+6. 미해양대기국 해수면 변화 모니터링(Mean Sea Level Trends for Global Network Stations) https://tidesandcurrents.noaa.gov/sltrends/sltrends_global.shtml
+7. 미해양대기국 해양관측 부이센터(National Data Buoy Center) https://www.ndbc.noaa.gov/
 #
 
