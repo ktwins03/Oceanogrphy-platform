@@ -4,7 +4,8 @@
 2. 국립수산과학원 KODC  https://www.nifs.go.kr/kodc/index.kodc
 3. 해양기후예측센터(OCPC) https://www.ocpc.kr/review
 4. 아시아·태평양경제협력체(APEC)기후센터 https://www.apcc21.org/?lang=ko
- 
+5. 해양환경공단 해양환경정보지도 https://www.meis.go.kr/map/oemsBaseMap.do
+#
 국외 해양환경정보 가시화 플랫폼>
 1. 널스쿨 https://earth.nullschool.net/ko/#current/wind/surface/level/orthographic
 2. Copernicus My ocean viewer  https://marine.copernicus.eu/access-data/myocean-viewer 
