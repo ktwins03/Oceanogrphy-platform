@@ -1,7 +1,6 @@
 # Oceanogrphy platform
 test
-
-(https://github.com/user-attachments/assets/105382b7-aa36-45b1-8fe8-ab9f58c55db9)
+<iframe src="https://worldview.earthdata.nasa.gov/?lg=false&t=2026-03-07-T11%3A17%3A50Z&em=true" role="application" sandbox="allow-modals allow-scripts allow-same-origin allow-forms allow-popups" width="100%" height="100%" allow="fullscreen; autoplay;" loading="lazy"></iframe>
 
 국내 해양환경정보 가시화 플랫폼>
 1. 국립해양조사원 바다누리 격자형 해양정보시스템  https://www.khoa.go.kr/oceangrid/gis/category/observe/observeSearch.do?type=EYS 
