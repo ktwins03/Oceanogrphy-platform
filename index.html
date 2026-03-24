@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentinel-2 위성영상 뷰어</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        body { margin: 0; padding: 0; }
+        #map { width: 100vw; height: 100vh; background: #e5e5e5; }
+        #info-box {
+            position: absolute; top: 15px; right: 15px; z-index: 1000;
+            background: rgba(255, 255, 255, 0.95); padding: 15px;
+            border-radius: 8px; font-family: 'Malgun Gothic', sans-serif;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15); font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div id="info-box">🛰️ 위성 영상 검색 중... (잠시만 기다려주세요)</div>
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        // 1. 지도 생성 (서울 중심점 설정)
+        const map = L.map('map').setView([37.5665, 126.9780], 11);
+
+        // 2. 배경 지도 추가
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap'
+        }).addTo(map);
+
+        // 3. STAC API 요청 설정 (Element 84)
+        const stacEndpoint = "https://earth-search.aws.element84.com/v1/search";
+        const requestBody = {
+            "collections": ["sentinel-2-l2a"],
+            "bbox": [126.8, 37.4, 127.2, 37.6],
+            "datetime": "2024-01-01T00:00:00Z/2024-12-31T23:59:59Z", // 2024년 전체 데이터 중
+            "query": { "eo:cloud_cover": { "lt": 10 } }, // 구름 10% 미만 필터링
+            "sortby": [{ "field": "properties.datetime", "direction": "desc" }], // [중요] 최신 날짜순으로 정렬
+            "limit": 1
+        };
+
+        // 4. API 검색 요청
+        fetch(stacEndpoint, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(requestBody)
+        })
+        .then(res => res.json())
+        .then(data => {
+            if (data.features && data.features.length > 0) {
+                const item = data.features[0];
+                const date = new Date(item.properties.datetime).toLocaleDateString();
+                const cloud = item.properties["eo:cloud_cover"].toFixed(1);
+                
+                // 정보창 업데이트
+                document.getElementById('info-box').innerHTML = 
+                    `✅ <b>가장 최신의 맑은 날 위성영상</b><br>` +
+                    `📅 촬영일: ${date}<br>☁️ 구름량: ${cloud}%`;
+
+                const cogUrl = item.assets.visual.href;
+                
+                // 5. 공용 TiTiler 서버를 통한 타일링
+                const titilerUrl = `https://titiler.xyz/cog/tiles/WebMercatorQuad/{z}/{x}/{y}?url=${encodeURIComponent(cogUrl)}`;
+
+                L.tileLayer(titilerUrl, {
+                    attribution: '© ESA Sentinel-2, TiTiler',
+                    maxZoom: 14
+                }).addTo(map);
+
+                // 6. 검색된 영상의 영역으로 지도 자동 이동
+                const bbox = item.bbox;
+                map.fitBounds([[bbox[1], bbox[0]], [bbox[3], bbox[2]]]);
+            } else {
+                document.getElementById('info-box').innerText = "⚠️ 조건에 맞는 영상이 없습니다.";
+            }
+        })
+        .catch(err => {
+            console.error(err);
+            document.getElementById('info-box').innerText = "❌ 데이터 로드 실패 (네트워크 또는 공용 서버 문제)";
+        });
+    </script>
+</body>
+</html>
