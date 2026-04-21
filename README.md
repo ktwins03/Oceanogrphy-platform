@@ -23,7 +23,6 @@
 10. Global fishing watch  https://globalfishingwatch.org/
 11. 38North  https://www.38north.org/
 12. Google earth engine  https://earthengine.google.com/
-13. Example of Google earth engine product  https://ktwins03.users.earthengine.app/view/ham-an-sat-view
 #
 
 다국적 인공위성 플랫폼 : 유럽연합> 
