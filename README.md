@@ -11,15 +11,16 @@
 #
 다국적 인공위성 플랫폼 : 미국>
 1. NASA World view  https://worldview.earthdata.nasa.gov/
-2. NASA Earth data  https://www.earthdata.nasa.gov/
-3. NASA Earth Observatory  https://earthobservatory.nasa.gov/
-4. NASA Earth Observatory "Green Harvest in South Korean Waters(NASA가 한국 김양식장을 소개하다.)"    https://earthobservatory.nasa.gov/images/148215/green-harvest-in-south-korean-waters 
-5. NASA Earth data forum  https://forum.earthdata.nasa.gov/viewforum.php?f=7
-6. Global fishing watch  https://globalfishingwatch.org/
-7. NASA Podaac   https://podaac.jpl.nasa.gov/ 
-8. NASA Ocean color  https://oceancolor.gsfc.nasa.gov/
-9. USGS Earth explorer  https://earthexplorer.usgs.gov/
-10. NOAA Coast watch  https://coastwatch.noaa.gov/cwn/index.html
+  * World view를 교육용으로 활용하는 사례 : 북극해 일대 해빙변화 관찰하기 Terra (NASA world view) 2018, 2019년 https://worldview.earthdata.nasa.gov/?v=-7033447.579808342,-3729582.9574279566,7149700.886055113,3168081.0425720434&p=antarctic&l=Coastlines_15m,VIIRS_SNPP_CorrectedReflectance_TrueColor(hidden),MODIS_Aqua_CorrectedReflectance_TrueColor(hidden),MODIS_Terra_CorrectedReflectance_TrueColor&lg=false&tr=pine_island_glacier_icebergb46_nov_2018&t=2018-11-06-T00%3A00%3A00Z
+3. NASA Earth data  https://www.earthdata.nasa.gov/
+4. NASA Earth Observatory  https://earthobservatory.nasa.gov/
+5. NASA Earth Observatory "Green Harvest in South Korean Waters(NASA가 한국 김양식장을 소개하다.)"    https://earthobservatory.nasa.gov/images/148215/green-harvest-in-south-korean-waters 
+6. NASA Earth data forum  https://forum.earthdata.nasa.gov/viewforum.php?f=7
+7. Global fishing watch  https://globalfishingwatch.org/
+8. NASA Podaac   https://podaac.jpl.nasa.gov/ 
+9. NASA Ocean color  https://oceancolor.gsfc.nasa.gov/
+10. USGS Earth explorer  https://earthexplorer.usgs.gov/
+11. NOAA Coast watch  https://coastwatch.noaa.gov/cwn/index.html
 #
 다국적 인공위성 플랫폼 : 유럽연합> 
 1. Copernicus browser   https://browser.dataspace.copernicus.eu/
