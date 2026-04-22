@@ -1,4 +1,4 @@
-# N-Space-Training_Introduction
+# N-Space-Training_Exp.
 
 국내 인공위성 유관 국가기관>
 1. 국가기상위성센터  https://nmsc.kma.go.kr/homepage/html/main/main.do
