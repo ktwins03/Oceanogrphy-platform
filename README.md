@@ -7,6 +7,7 @@
 #
 국내 민간기관>
 1. SIA OVISION Earth https://ovision.ai/
+2. 서울대 위성활용연구센터 플랫폼 : https://scv.snu.ac.kr/
 #
 다국적 인공위성 플랫폼 : 미국>
 1. NASA World view  https://worldview.earthdata.nasa.gov/
@@ -60,7 +61,6 @@ https://www.pennmike.com/news/articleView.html?idxno=117848
 https://browser.dataspace.copernicus.eu/?zoom=11&lat=25.57028&lng=54.90349&themeId=VOLCANOES&visualizationUrl=U2FsdGVkX18ywnU8g6Jph%2Fx8zdF0B2dzPw3jMEERUCMcoFjz%2BItMbv96Y5GP8UHWX2So34exPrfICC%2FrRI0O2E8K7LZDmtEMeNkf1G3CcIy9h7%2FXAi%2Febn3czqhN%2FMN1&datasetId=S2_L2A_CDAS&fromTime=2026-01-02T00%3A00%3A00.000Z&toTime=2026-01-02T23%3A59%3A59.999Z&layerId=TRUE-COLOR&demSource3D=%22MAPZEN%22&cloudCoverage=30&dateMode=SINGLE&compareShare=true&comparedOpacity=%5B1%2C1%5D&comparedClipping=%5B%5B0%2C1%5D%2C%5B0%2C1%5D%5D&compareMode=split&compareSharedPinsId=0db5af3e-f6d0-4c65-9df8-ec47fb2a2c98
 #
 # 위성영상 활용(EO/SAR/AIS 등 다출처 융합)사례 (미국-이란 전쟁) : GFW
-서울대 위성활용연구센터 플랫폼 : https://scv.snu.ac.kr/
 호르무즈해협 선박 통항 상황 3월 30일 ~ 4월 22일>
 https://globalfishingwatch.org/map/index?longitude=57.349791126946734&latitude=25.225753130758108&zoom=4.7783535015017105&start=2026-03-30T00%3A00%3A00.000Z&end=2026-04-22T00%3A00%3A00.000Z
 #
